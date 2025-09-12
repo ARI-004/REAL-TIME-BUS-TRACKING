@@ -1,0 +1,300 @@
+/**
+ * BusDetails.css
+ *
+ * @format
+ */
+
+.bus-details {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f8fafc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map-container {
+  flex: 1;
+  width: 100%;
+  min-height: 60%;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+.info-panel {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px 12px 0 0;
+}
+
+.info-panel h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.bus-info {
+  background: #f1f5f9;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid #3b82f6;
+}
+
+.bus-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.bus-info b {
+  color: #0f172a;
+}
+
+.info-panel p {
+  font-size: 1rem;
+  color: #475569;
+  margin: 6px 0;
+}
+
+.info-panel p b {
+  color: #1d4ed8;
+}
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #333;
+}
+
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #3b82f6;
+  margin-right: 12px;
+  position: relative;
+}
+
+.timeline-marker::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #ddd;
+  left: 6px;
+  top: 14px;
+}
+
+.timeline-item:last-child .timeline-marker::after {
+  display: none;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-bottom: 8px;
+}
+
+.stop-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.stop-name {
+  font-size: 15px;
+  color: #222;
+}
+
+.delay {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.delay.late {
+  color: red;
+}
+
+.delay.early {
+  color: green;
+}
+
+.delay.ontime {
+  color: #555;
+}
+
+.planned {
+  color: #777;
+}
+
+.actual {
+  color: #4caf50;
+  font-weight: 500;
+}
+/* Current stop highlight */
+.current-stop .timeline-marker {
+  background: #2563eb; /* Bright blue */
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+}
+
+.current-stop .stop-name {
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.now-label {
+  background: #2563eb;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 6px;
+}
+/* ===================
+   BusDetails Page
+=================== */
+.bus-details {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-container {
+  flex: 1;
+  width: 100%;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.info-panel {
+  flex: none;
+  max-height: 50vh;
+  overflow-y: auto;
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bus-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.bus-info p {
+  margin: 0.25rem 0;
+  color: #374151;
+}
+
+.timeline-title {
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ===================
+   Timeline Styles
+=================== */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0.5rem;
+  left: -0.75rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #9ca3af;
+  border: 2px solid #fff;
+  z-index: 2;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}
+
+.timeline-step.current .timeline-dot {
+  background-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.timeline-card {
+  margin-left: 1rem;
+  background: #f9fafb;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease-in-out;
+}
+
+.timeline-step.current .timeline-card {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.stop-name {
+  font-weight: 600;
+  color: #111827;
+  font-size: 1rem;
+}
+
+.status-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.status-tag.late {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-tag.early {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-tag.ontime {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.step-times p {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+  color: #374151;
+}
