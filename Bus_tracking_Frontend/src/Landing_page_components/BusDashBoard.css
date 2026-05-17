@@ -1,0 +1,128 @@
+/** @format */
+
+.bus-dashboard {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1d3557;
+  text-align: center;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-dot.active {
+  background: #06d6a0;
+}
+
+.status-dot.inactive {
+  background: #ff595e;
+}
+
+.location-info {
+  background: #f1faee;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.map-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #e9ecef;
+}
+
+.stops-form {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.stops-form h3 {
+  margin-bottom: 10px;
+}
+
+.stop-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.stop-row input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.remove-btn {
+  background: #ff595e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-actions button:first-child {
+  background: #118ab2;
+  color: white;
+}
+
+.form-actions button:last-child {
+  background: #06d6a0;
+  color: white;
+}
+
+.share-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.share-btn.start {
+  background: #1d3557;
+  color: #fff;
+}
+
+.share-btn.stop {
+  background: #e63946;
+  color: #fff;
+}

@@ -1,0 +1,65 @@
+/**
+ * BusLogin.css
+ *
+ * @format
+ */
+
+/* Center the form */
+.bus-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 360px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.bus-login-form h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+/* Input fields */
+.bus-login-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.bus-login-form input:focus {
+  border-color: #3b82f6;
+}
+
+/* Submit button */
+.bus-login-form button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bus-login-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Error messages */
+.bus-login-form .error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
