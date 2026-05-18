@@ -49,6 +49,9 @@ Frontend Setup
 ->cd frontend
 ->npm install
 ->npm run dev
+
+
+
 Frontend runs on:
 ->http://localhost:5173
 
@@ -57,6 +60,9 @@ Backend Setup:
 ->cd backend
 ->npm install
 ->npm start
+
+
+
 Backend runs on:
 ->http://localhost:5000
 
