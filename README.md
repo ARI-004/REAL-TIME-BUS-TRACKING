@@ -16,16 +16,21 @@ Frontend:
 ->React.js
 ->JavaScript
 ->CSS
+
+
 Backend:
 ->Node.js 
 ->REST APIs
 ->WebSocket / Socket.IO
+
+
 Database:
 ->MongoDB 
 
 
 Project Structure:
-REAL-TIME-BUS-TRACKING
+
+REAL-TIME-BUS-TRACKING:
 │
 ├── backend
 │
